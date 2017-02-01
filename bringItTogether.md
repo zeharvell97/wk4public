@@ -47,9 +47,21 @@ var room = {
 
 ##### `Cube` objects have two properties:
   -  `length` : a Number representing the inches of each side of the cube. Assume the length of the cube is 24 'units'.
-  - `volume` : a method that returns the physical volume of the cube.
+  - `volume` : a method that returns the physical volume of the cube, which is the length to the power of three. You might consider using [`Math.pow`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/pow) or just multiply the length by itself three times.
 
 
 ## Where To Start
 
-You will need to loop through the array of rooms and for each room array, convert the information into an object with various pieces of data inside it. You should use Constructors to create your chair and cube objects.
+You will need to loop through the array of rooms and for each room array, convert the information into an object with various pieces of data inside it. You should use the constructors provided to create your chair, cube, and room objects. 
+
+You will notice that these constructors are documented with a special comment syntax called a `docstring`. It looks like this:
+
+```
+/**
+ * Represents a classroom at Prime
+ * @constructor
+ * @param {Array} array - a single room array of data
+**/
+```
+
+Don't worry about this too much. First thing to know is that it is a comment block, meaning that it is not executable code. Then you will see the description of what the constructor does. Finally, you will see a list of parameters, what they represent, and their types. Use this as additional information to help you understand what code you need to write. 

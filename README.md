@@ -15,7 +15,7 @@ Welcome to the week four homework assignment. You have learned a lot over this w
 * Object Constructors (Advanced)
 * Bringing it all together (Loops, Objects, and Arrays)
 
-This week's homework is broken in to three parts. The first two are smaller reviews of arrays and objects. Part 3 will bring everything together into a more "business problem" based question, it will feel tough, but they also should feel closer to what it will be like in class or at a development job. 
+This week's homework is broken in to three parts. The first two are smaller reviews of arrays and objects. Part 3 will bring everything together into a more "business problem" based question. It will feel tough, but it should also feel closer to what it will be like in class or at a development job. Take your time with the problem and stretch what you know about JavaScript. Experiment as you work through the problem and we encourage you to rush to failure. Let us know where you get stuck, as always we are here to help.
 
 ### Week 4 Assignment
 As always start off by forking and cloning this repository from Github. Open the code up in Atom to get started.
