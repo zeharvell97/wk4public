@@ -1,0 +1,26 @@
+{
+  "name": "prework-week-4-assignment",
+  "version": "1.0.0",
+  "description": "prework-week-4-assignment",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/**"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/PrimeAcademy/prework-week-4-assignment.git"
+  },
+  "author": "Prime Academy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/PrimeAcademy/prework-week-4-assignment/issues"
+  },
+  "homepage": "https://github.com/PrimeAcademy/prework-week-4-assignment#readme",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "mocha": "^3.2.0"
+  }
+}
