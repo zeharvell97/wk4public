@@ -21,6 +21,7 @@
   "homepage": "https://github.com/PrimeAcademy/prework-week-4-assignment#readme",
   "devDependencies": {
     "chai": "^3.5.0",
-    "mocha": "^3.2.0"
+    "mocha": "^3.2.0",
+    "sinon": "^1.17.7"
   }
 }
