@@ -2,9 +2,7 @@ var chai = require('chai');
 var objects = require('../assignment/objects.assignment');
 var sinon = require('sinon');
 
-
-describe('Testing Object Review', function() {
-
+describe('basemode Testing Object Review', function() {
   describe('the threeBooks function', function() {
     it('should return 3 objects in an array', function() {
       var books = objects.threeBooks();

@@ -1,7 +1,7 @@
 var chai = require('chai');
 var arrays = require('../assignment/arrays.assignment');
 
-describe('Testing Array Review', function() {
+describe('basemode Testing Array Review', function() {
   describe('the createArray function', function() {
     it('should create an array with 6 elements', function() {
       var array = arrays.createArray();
