@@ -16,6 +16,11 @@ describe('basemode Testing Object Review', function() {
       chai.expect(books[0]).to.have.ownProperty('pageCount');
       chai.expect(books[0]).to.have.ownProperty('haveRead');
     });
+    it('should have boolean value for haveRead property', function() {
+      var books = objects.threeBooks();
+      chai.expect(books[0].haveRead).to.be.a('boolean');
+    });
+
   });
 
   describe('the fixLiteralSyntax function', function() {
@@ -25,8 +30,13 @@ describe('basemode Testing Object Review', function() {
       chai.expect(movie).to.have.ownProperty('runTime');
       chai.expect(movie).to.have.ownProperty('releaseYear');
       chai.expect(movie).to.have.ownProperty('director');
-      // @TODO probably should check values but this assignment allows flexibility
     });
+    it('NOT REQUIRED but could make numbers into number types', function() {
+      var movie = objects.fixLiteralSyntax();
+      chai.expect(movie.runTime).to.be.a('number');
+      chai.expect(movie.releaseYear).to.have.to.be.a('number');
+    });
+
   });
 
   describe('the Book constructor function', function() {
