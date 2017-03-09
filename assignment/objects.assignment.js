@@ -36,7 +36,7 @@ function fixLiteralSyntax() {
 Object Constructors
 **/
 
-// Write a constructor function to create Book objects with the same four properties as above.
+// Write a constructor function to create 'Book' objects with the same four properties as above.
 // Write the constructor function here:
 
 
