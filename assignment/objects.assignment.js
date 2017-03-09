@@ -2,15 +2,15 @@
 Object Literals
 **/
 function threeBooks() {
-  // Create 3 book objects with object literal syntax. Books should have properties for title, author, and pageCount
-  // Write code here
+  // Create 3 book objects with object literal syntax. Books should have properties for title, author, and pageCount.
+  // Write code here:
 
 
-  // Add a property of haveRead to each book object you created. This should be set to true or false
-  // Write code here
+  // Add a property of haveRead to each book object you created. This should be set to true or false.
+  // Write code here:
 
-  // Store these objects in an array called books
-  // Write code here
+  // Store these objects in an array called books.
+  // Write code here:
 
   // return this array
   return books;
@@ -37,14 +37,16 @@ Object Constructors
 **/
 
 // Write a constructor function to create Book objects with the same four properties as above.
-// Write code here
+// Write the constructor function here:
+
+
 
 function createBooksWithConstructor() {
-  // Create 3 new books using this constructor function.
-  // Write code here
+  // In this function, create 3 new books by using the constructor function you wrote above.
+  // Write code here:
 
-  // Store them in an array called books
-  // Write code here
+  // Store these new books in an array called books.
+  // Write code here:
 
   // return our array of books
   return books;
