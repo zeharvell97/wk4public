@@ -42,7 +42,7 @@ Object Constructors
 
 
 function createBooksWithConstructor() {
-  // In this function, create 3 new books by using the constructor function you wrote above.
+  // In this function, create 3 new 'Book' objects by using the constructor function you wrote above.
   // Write code here:
 
   // Store these new books in an array called books.
