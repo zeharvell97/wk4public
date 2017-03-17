@@ -34,10 +34,3 @@ function arrayReverser(arrayParam) {
 }
 
 // call and console log the return for loopArray and arrayReverser
-
-// -- DON'T TOUCH CODE BELOW --
-module.exports = {
-  createArray: createArray,
-  loopArray: loopArray,
-  arrayReverser: arrayReverser
-};
