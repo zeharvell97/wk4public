@@ -26,8 +26,11 @@ Finally, remember `console.log()` is your friend and you can use it in conjuncti
 
 This week you'll be completing the scripts in the following files:
 
-- [ ] *arrays.assignments.js*
-- [ ] *objects.assignment.js*
+- [ ] *1_arrayLoopAndConcat.js*
+- [ ] *2_arrayReverser.js*
+- [ ] *3_objectLiteralCreate.js*
+- [ ] *4_objectLiteralFix.js*
+- [ ] *5_objectConstructorCreate.js*
 
 Similar to last week's assignment, each script has some code ready for you with comments telling you what to write. Take the following as an example.
 
