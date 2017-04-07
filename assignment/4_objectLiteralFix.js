@@ -5,7 +5,7 @@ function fixLiteralSyntax() {
       name : Hidden Figures;
       runtime : 127 mins;
       releaseYear = 2016;
-      "Director" : "Theodore Melfi".
+      "director" : "Theodore Melfi".
   }
   **/
 
