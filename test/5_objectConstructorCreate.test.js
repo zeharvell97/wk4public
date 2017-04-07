@@ -25,7 +25,7 @@ describe('basemode Testing Object Review', function() {
   });
 
   describe('the createBooksWithConstructor function', function() {
-    var constructorSpy = sinon.spy(window, 'Book');
+    // var constructorSpy = sinon.spy(window, 'Book');
 
     // it('should call the Book constructor with new 3 times', function() {
     //   // new constructorSpy('hp', 'jk rowling', 444, true);
