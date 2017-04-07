@@ -1,3 +1,4 @@
+// Create books with object literal syntax
 function threeBooks() {
   // Create 3 book objects with object literal syntax. Books should have properties for title, author, and pageCount.
   // Write code here:

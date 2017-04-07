@@ -1,3 +1,4 @@
+//Create books again, this time with object constructor syntax
 // Write a constructor function to create 'Book' objects with the same four properties as above.
 // Write the constructor function here:
 function Book(title, author, pageCount, haveRead) {
