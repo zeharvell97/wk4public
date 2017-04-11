@@ -1,26 +1,32 @@
-describe('basemode Testing Object Review', function() {
-  describe('the threeBooks function', function() {
-    it('should return 3 objects in an array', function() {
+describe('basemode objectLiteralCreate.js', function() {
+  describe('threeBooks()', function() {
+    it('returns 3 objects in an array', function() {
       var books = threeBooks();
       chai.expect(books).to.have.lengthOf(3);
     });
 
-    it('should return book objects with 4 specific properties', function() {
+    it('returns book objects with 4 specific properties', function() {
       var books = threeBooks();
-      chai.expect(books[0]).to.have.ownProperty('title');
-      chai.expect(books[0]).to.have.ownProperty('author');
-      chai.expect(books[0]).to.have.ownProperty('pageCount');
-      chai.expect(books[0]).to.have.ownProperty('haveRead');
+      books.forEach(function (book) {
+        chai.expect(book).to.have.ownProperty('title');
+        chai.expect(book).to.have.ownProperty('author');
+        chai.expect(book).to.have.ownProperty('pageCount');
+        chai.expect(book).to.have.ownProperty('haveRead');
+      });
     });
 
-    it('should have number value for pageCount property', function() {
+    it('has a number value for pageCount property', function() {
       var books = threeBooks();
-      chai.expect(books[0].pageCount).to.be.a('number');
+      books.forEach(function (book) {
+        chai.expect(book.pageCount).to.be.a('number');
+      });
     });
 
-    it('should have boolean value for haveRead property', function() {
+    it('has a boolean value for haveRead property', function() {
       var books = threeBooks();
-      chai.expect(books[0].haveRead).to.be.a('boolean');
+      books.forEach(function (book) {
+        chai.expect(book.haveRead).to.be.a('boolean');
+      });
     });
   });
 });

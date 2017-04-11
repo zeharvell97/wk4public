@@ -1,6 +1,6 @@
-describe('basemode Testing Object Review', function() {
-  describe('the fixLiteralSyntax function', function() {
-    it('should return an object with 4 specific properties', function() {
+describe('basemode objectLiteralFix.js', function() {
+  describe('fixLiteralSyntax()', function() {
+    it('returns an object with 4 specific properties', function() {
       var movie = fixLiteralSyntax();
       chai.expect(movie).to.have.ownProperty('name');
       chai.expect(movie).to.have.ownProperty('runtime');
@@ -8,16 +8,22 @@ describe('basemode Testing Object Review', function() {
       chai.expect(movie).to.have.ownProperty('director');
     });
 
-    it('should have number and string types', function() {
+    it('has number and string types', function() {
       var movie = fixLiteralSyntax();
       chai.expect(movie.name).to.be.a('string');
       chai.expect(movie.director).to.be.a('string');
       chai.expect(movie.releaseYear).to.have.to.be.a('number');
     });
 
-    it('NOT REQUIRED but change runtime from string to number', function() {
+    it('has runtime property that is a string or number', function() {
       var movie = fixLiteralSyntax();
-      chai.expect(movie.runtime).to.be.a('number');
+      if (typeof movie.runtime === 'string') {
+        chai.expect(movie.runtime).to.equal('127 mins');
+      }
+
+      if (typeof movie.runtime === 'number') {
+        chai.expect(movie.runtime).to.equal(127);
+      }
     });
   });
 });

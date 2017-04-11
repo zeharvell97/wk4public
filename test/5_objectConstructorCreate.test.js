@@ -1,7 +1,7 @@
-describe('basemode Testing Object Review', function() {
+describe('basemode objectConstructorCreate.js', function() {
 
-  describe('the Book constructor function', function() {
-    it('should return an object with 4 specific properties', function() {
+  describe('Book()', function() {
+    it('returns an object with 4 specific properties', function() {
       var book = new Book('hp', 'jk rowling', 444, true);
       chai.expect(book).to.have.ownProperty('title');
       chai.expect(book).to.have.ownProperty('author');
@@ -9,7 +9,7 @@ describe('basemode Testing Object Review', function() {
       chai.expect(book).to.have.ownProperty('haveRead');
     });
 
-    it('should return an object with 4 values', function() {
+    it('returns an object with 4 values', function() {
       var book = new Book('hp', 'jk rowling', 444, true);
       chai.expect(book.title).to.equal('hp');
       chai.expect(book.author).to.equal('jk rowling');
@@ -24,7 +24,7 @@ describe('basemode Testing Object Review', function() {
     });
   });
 
-  describe('the createBooksWithConstructor function', function() {
+  describe('createBooksWithConstructor()', function() {
     // var constructorSpy = sinon.spy(window, 'Book');
 
     // it('should call the Book constructor with new 3 times', function() {
@@ -45,28 +45,36 @@ describe('basemode Testing Object Review', function() {
     //   constructorSpy.restore();
     // });
 
-    it('should return 3 objects in an array', function() {
+    it('returns 3 Book objects in an array', function() {
       var books = createBooksWithConstructor();
       chai.expect(books).to.have.lengthOf(3);
-      chai.expect(books[0]).to.be.a('object');
+      books.forEach(function (book) {
+        chai.expect(book).to.be.a('object');
+      });
     });
 
-    it('should return book objects with 4 specific properties', function() {
+    it('returns book objects with 4 specific properties', function() {
       var books = createBooksWithConstructor();
-      chai.expect(books[0]).to.have.ownProperty('title');
-      chai.expect(books[0]).to.have.ownProperty('author');
-      chai.expect(books[0]).to.have.ownProperty('pageCount');
-      chai.expect(books[0]).to.have.ownProperty('haveRead');
+      books.forEach(function (book) {
+        chai.expect(book).to.have.ownProperty('title');
+        chai.expect(book).to.have.ownProperty('author');
+        chai.expect(book).to.have.ownProperty('pageCount');
+        chai.expect(book).to.have.ownProperty('haveRead');
+      });
     });
 
-    it('should have number value for pageCount property', function() {
+    it('has a number value for pageCount property', function() {
       var books = createBooksWithConstructor();
-      chai.expect(books[1].pageCount).to.be.a('number');
+      books.forEach(function (book) {
+        chai.expect(book.pageCount).to.be.a('number');
+      });
     });
 
-    it('should have boolean value for haveRead property', function() {
+    it('has a boolean value for haveRead property', function() {
       var books = threeBooks();
-      chai.expect(books[1].haveRead).to.be.a('boolean');
+      books.forEach(function (book) {
+        chai.expect(book.haveRead).to.be.a('boolean');
+      });
     });
   });
 });
