@@ -25,26 +25,6 @@ describe('basemode objectConstructorCreate.js', function() {
   });
 
   describe('createBooksWithConstructor()', function() {
-    // var constructorSpy = sinon.spy(window, 'Book');
-
-    // it('should call the Book constructor with new 3 times', function() {
-    //   // new constructorSpy('hp', 'jk rowling', 444, true);
-    //   createBooksWithConstructor();
-    //   // expect(constructorSpy.calledWithNew).to.be.equal(true);
-    //   constructorSpy.should.have.been.calledWithNew
-    //
-    //   // console.log(constructorSpy);
-    //
-    //   // assert(constructorSpy.calledWithNew());
-    //   // constructorSpy.should.have.been.calledWithNew
-    //   // expect(constructorSpy.calledWithNew()).to.be.true
-    //   // sinon spy counts the number of times the constructor was called
-    //   // constructorSpy.should.have.been.calledWithNew
-    //   // chai.expect(constructorSpy.calledWithNew()).to.be.true;
-    //
-    //   constructorSpy.restore();
-    // });
-
     it('returns 3 Book objects in an array', function() {
       var books = createBooksWithConstructor();
       chai.expect(books).to.have.lengthOf(3);
