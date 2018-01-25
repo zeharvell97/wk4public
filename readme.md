@@ -13,13 +13,13 @@ These will be applied in an inventory system for a long term parking garage. Thi
 Base Mode
 ===
 
-1. Global variables and pushing to an array
+Global variables and pushing to an array
 ---
 
 - create a variable named "parkedCars" and set it to an empty array
 - create a ```const``` named "maxCars" and set it to 27
 
-2. the ```parkCar``` function
+the ```parkCar``` function
 ---
 
 - create a function called ```parkCar``` that will receive a car name.
@@ -31,7 +31,7 @@ Base Mode
 Hard Mode
 ===
 
-3. the ```isParkedHere``` function
+the ```isParkedHere``` function
 ---
 
 - write a function named ```isParkedHere``` that receives a car named
@@ -41,8 +41,9 @@ Hard Mode
 Pro Mode
 ===
 
-4. take a car for a ride
+take a car for a ride
 ---
+
 - write a function named ```takeForASpin``` that receives a car name
 - this function should use ```isParkedHere``` to determine if the car for which you are looking is in this garage
 - if so, remove this car from the "parkedCars" array and return the car name
