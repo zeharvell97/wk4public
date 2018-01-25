@@ -41,10 +41,10 @@ the ```isParkedHere``` function
 Pro Mode
 ===
 
-take a car for a ride
+the ```takeForASpin``` function
 ---
 
 - write a function named ```takeForASpin``` that receives a car name
 - this function should use ```isParkedHere``` to determine if the car for which you are looking is in this garage
-- if so, remove this car from the "parkedCars" array and return the car name
+- if so, remove this car from the "parkedCars" array and return the car name (hint: look up ```splice``` for help on removing an item from an array)
 - if not, return ```false```
