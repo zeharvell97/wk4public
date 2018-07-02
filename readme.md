@@ -44,3 +44,5 @@ the ```takeForASpin``` function
 - this function should use ```isParkedHere``` to determine if the car for which you are looking is in this garage
 - if so, remove this car from the "parkedCars" array and return the car name (hint: look up ```splice``` for help on removing an item from an array)
 - if not, return ```false```
+
+**REMINDER:** Make sure to answer the Slack discussion question for this week!
