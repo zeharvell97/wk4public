@@ -17,7 +17,7 @@ Global variables and pushing to an array
 ---
 
 - create a variable named "parkedCars" and set it to an empty array
-- create a ```const``` named "maxCars" and set it to 27
+- create a ```const``` named "maxCars" and set it to 7
 
 the ```parkCar``` function
 ---
