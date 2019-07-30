@@ -32,13 +32,9 @@ the ```parkCar``` function
 Now let's practice some CSS! for this, we will go back to our index.html to start:
 
 - Place the `<h1>` and `<p>` inside of a header and add a background-color to that header
-
 - Create a stylesheet.css file and import it into the index.html file.
-
 - Add a new div with a class name of "info". Inside that div add an `<h2> My name is YOUR NAME </h2>` Add a background-color and a text color of your choice.
-
 - Add an image tag `<img>` and source an image of your main mode of transportation (you car, bus, scooter, bike, feet, etc)
-
 - Add an `<h3>` that explains your mode of transportation. Add a background-color and a text color of your choice.
 
 
