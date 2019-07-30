@@ -25,6 +25,7 @@ Inside that div add an `<h2> My name is YOUR NAME </h2>` Add a background-color 
 Add an image tag `<img>` and source an image of your main mode of transportation (you car, bus, scooter, bike, feet, etc)
 
 Add an `<h3>` that explains your mode of transportation. Add a background-color and a text color of your choice.
+
 ---
 
 Global variables and pushing to an array
@@ -52,6 +53,7 @@ center that div, and the text inside
 add margin:0 to the body of the page
 
 add padding: 20px to the header
+
 ---
 
 
