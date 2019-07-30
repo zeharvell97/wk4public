@@ -14,6 +14,7 @@ Required Features
 ===
 
 CSS 
+---
 
 Create a stylesheet.css file and import it into the index.html file.
 
@@ -45,18 +46,6 @@ the ```parkCar``` function
 Stretch Goals
 ===
 
-CSS
-Add a border to your info div
-
-center that div, and the text inside
-
-add margin:0 to the body of the page
-
-add padding: 20px to the header
-
----
-
-
 the ```isParkedHere``` function
 ---
 
@@ -74,5 +63,5 @@ the ```takeForASpin``` function
 
 **REMINDER:** Make sure to answer the Slack discussion question for this week!
 
-
+The style should look something like this (image shown has a little more CSS - feel free to try some new things!)
 <img src="./example.png" />
