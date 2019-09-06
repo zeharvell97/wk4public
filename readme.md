@@ -19,7 +19,7 @@ These will be applied in an inventory system for a long term parking garage. Thi
 ### the `parkCar` function
 
 - create a function called `parkCar` that will receive a car name.
-- When called [ ex: `parkCar( 'PT Cruiser' )` ] that car name should be pushed into the array "parkedCars"
+- When called [ ex: `parkCar('PT Cruiser')` ] that car name should be pushed into the array "parkedCars"
 - this should happen only if there is room in the garage. Hint: check the length of the array to determine how many cars are in the garage. Check this against the "maxCars" const to check if there is room in the garage
 - if the car was pushed into the array, return `true`, if there was no room and the car wouldn't fit return `false`
 
@@ -44,7 +44,7 @@ The style should look something like this (image shown has a little more CSS - f
 ### the `isParkedHere` function
 
 - write a function named `isParkedHere` that receives a car named
-- when run [ex: `isParkedHere( 'Ford Escape' )` ], the function should return `true` if that car is parked in the garage
+- when run [ex: `isParkedHere('Ford Escape')` ], the function should return `true` if that car is parked in the garage
 - return `false` if not found in the garage
 
 ### the `takeForASpin` function
@@ -60,3 +60,16 @@ This is a *really* big stretch, but this is where we will be headed soon. This w
 
 - Add an `input` and a `button` that says `Take for a Spin` to `index.html`
 - When a user clicks `Take for a Spin`, there should be an `alert` that says, "Let's go!" or "That car is not here!" using the `takeForASpin` function. The `takeForASpin` function should still work (returning `false` or the car)
+
+### Add Color
+
+Add color to your cars, and allow a user to search by color or by the name of the car.
+
+For Example:
+
+- If we add a Red PT Cruiser to our array with `parkCar('Red PT Cruiser')`
+- We should be able to run `takeForASpin('Red')` or `takeForASpin('PT Cruiser')` and find the car. If it is not there, we should still get `false`.
+
+How would you go about storing additional information for this car? What if you wanted to store year, make, model, VIN, owner, and a bunch of other information?
+
+Can you think of any limitations that strings might have? Include a comment in your code about what issues strings might run up against. What data type do you think could be a potential solution going forward?
