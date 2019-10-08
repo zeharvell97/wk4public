@@ -57,7 +57,7 @@ The style should look something like this (image shown has a little more CSS - f
 
 ### Add Color
 
-Add color to your cars! Allow a user to specicfy a color when they park a car, and then use the color to search for a car to takeForASpin. 
+Add color to your cars! Update the `parkCar` function to accept a color parameter, and then update the `takeForASpin` function to allow the color to be used to search for a car. 
 
 For Example:
 
