@@ -57,13 +57,11 @@ The style should look something like this (image shown has a little more CSS - f
 
 ### Add Color
 
-Add color to your cars, and allow a user to search by color or by the name of the car.
+Add color to your cars! Allow a user to specicfy a color when they park a car, and then use the color to search for a car to takeForASpin. 
 
 For Example:
 
-- If we add a Red PT Cruiser to our array with `parkCar('Red PT Cruiser')`
+- If we add a Red PT Cruiser to our array with `parkCar('PT Cruiser', 'Red')`
 - We should be able to run `takeForASpin('Red')` or `takeForASpin('PT Cruiser')` and find the car. If it is not there, we should still get `false`.
 
-How would you go about storing additional information for this car? What if you wanted to store year, make, model, VIN, owner, and a bunch of other information?
-
-Can you think of any limitations that strings might have? Include a comment in your code about what issues strings might run up against. What data type do you think could be a potential solution going forward?
+How would you go about storing additional information for this car? What if you wanted to store year, make, model, VIN, owner, and a bunch of other information?  (Hint: research objects)
