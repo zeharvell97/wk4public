@@ -54,12 +54,6 @@ The style should look something like this (image shown has a little more CSS - f
 - if so, remove this car from the "parkedCars" array and return the car name (hint: look up `splice` for help on removing an item from an array)
 - if not, return `false`
 
-### Search from DOM
-
-This is a *really* big stretch, but this is where we will be headed soon. This was not covered in this week's videos, so it will require a decent amount of additional research.
-
-- Add an `input` and a `button` that says `Take for a Spin` to `index.html`
-- When a user clicks `Take for a Spin`, there should be an `alert` that says, "Let's go!" or "That car is not here!" using the `takeForASpin` function. The `takeForASpin` function should still work (returning `false` or the car)
 
 ### Add Color
 
