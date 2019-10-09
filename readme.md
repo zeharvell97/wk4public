@@ -54,22 +54,14 @@ The style should look something like this (image shown has a little more CSS - f
 - if so, remove this car from the "parkedCars" array and return the car name (hint: look up `splice` for help on removing an item from an array)
 - if not, return `false`
 
-### Search from DOM
-
-This is a *really* big stretch, but this is where we will be headed soon. This was not covered in this week's videos, so it will require a decent amount of additional research.
-
-- Add an `input` and a `button` that says `Take for a Spin` to `index.html`
-- When a user clicks `Take for a Spin`, there should be an `alert` that says, "Let's go!" or "That car is not here!" using the `takeForASpin` function. The `takeForASpin` function should still work (returning `false` or the car)
 
 ### Add Color
 
-Add color to your cars, and allow a user to search by color or by the name of the car.
+Add color to your cars! Update the `parkCar` function to accept a color parameter, and then update the `takeForASpin` function to allow the color to be used to search for a car. 
 
 For Example:
 
-- If we add a Red PT Cruiser to our array with `parkCar('Red PT Cruiser')`
+- If we add a Red PT Cruiser to our array with `parkCar('PT Cruiser', 'Red')`
 - We should be able to run `takeForASpin('Red')` or `takeForASpin('PT Cruiser')` and find the car. If it is not there, we should still get `false`.
 
-How would you go about storing additional information for this car? What if you wanted to store year, make, model, VIN, owner, and a bunch of other information?
-
-Can you think of any limitations that strings might have? Include a comment in your code about what issues strings might run up against. What data type do you think could be a potential solution going forward?
+How would you go about storing additional information for this car? What if you wanted to store year, make, model, VIN, owner, and a bunch of other information?  (Hint: research objects)
