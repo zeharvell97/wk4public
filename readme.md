@@ -23,6 +23,18 @@ These will be applied in an inventory system for a long term parking garage. Thi
 - this should happen only if there is room in the garage. Hint: check the length of the array to determine how many cars are in the garage. Check this against the "maxCars" const to check if there is room in the garage
 - if the car was pushed into the array, return `true`, if there was no room and the car wouldn't fit return `false`
 
+__IMPORTANT:__ Make sure to test your functions in the JavaScript file! 
+
+Use code like this to verify that you get the results that you expect:
+```
+console.log(`Before parking car array is ${parkedCars}`);
+console.log('Parking car 1 (expect true)', parkCar('Toyota'));
+console.log(`After parking car array is ${parkedCars}`);
+// ... park more cars ...
+console.log('Parking car 8 (expect false)', parkCar('Mini'));
+console.log(`After parking car array is ${parkedCars}. (Should not contain Mini.)`);
+```
+
 ### Styling with `CSS` 
 
 Now let's practice some CSS! for this, we will go back to our index.html to start:
@@ -43,16 +55,20 @@ The style should look something like this (image shown has a little more CSS - f
 
 ### the `isParkedHere` function
 
-- write a function named `isParkedHere` that receives a car named
-- when run [ex: `isParkedHere('Ford Escape')` ], the function should return `true` if that car is parked in the garage
-- return `false` if not found in the garage
+- write a function named `isParkedHere` that receives a car name.
+- when run [ ex: `isParkedHere('Ford Escape')` ], the function should return either:
+  - the index of the car in the array, if that car is parked in the garage
+  - OR `-1` if the car is not found 
 
 ### the `takeForASpin` function
 
-- write a function named `takeForASpin` that receives a car name
-- this function should use `isParkedHere` to determine if the car for which you are looking is in this garage
-- if so, remove this car from the "parkedCars" array and return the car name (hint: look up `splice` for help on removing an item from an array)
-- if not, return `false`
+- write a function named `takeForASpin` that receives a car name.
+- this function should use `isParkedHere` to determine if the car is in the garage and where it is found
+- then the function should either:
+  - remove this car from the "parkedCars" array and return the car name (hint: look up `splice` for help on removing an item from an array)
+  - OR return `null` if the car is not found 
+
+> Note: `null` is a special value in JavaScript that indicates that *no value* was found or intended. Contrast this with `undefined` which is the default value of a variable that has not been set. If you (as a programmer) want to indicate a function is returning no value or that a variable has no value set, use `null` not `undefined`. 
 
 
 ### Add Color
