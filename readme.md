@@ -68,7 +68,7 @@ The style should look something like this (image shown has a little more CSS - f
   - remove this car from the "parkedCars" array and return the car name (hint: look up `splice` for help on removing an item from an array)
   - OR return `null` if the car is not found 
 
-> Note: `null` is a special value in JavaScript that indicates that *no value*. If you (as a programmer) want to indicate a function is returning no value or that a variable has no value set, use `null` not `undefined`. Contrast this with `undefined` which is the default value of a variable that has not been set. 
+> Note: `null` is a special value in JavaScript that can be assigned to a variable representing that the variable has *no value*. If you (as a programmer) want to indicate a function is returning no value or that a variable has no value set, use `null` not `undefined`. Contrast this with `undefined` which is the default value of a variable that has not been set.
 
 
 ### Add Color
