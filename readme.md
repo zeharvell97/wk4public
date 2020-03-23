@@ -9,6 +9,21 @@ This week we'll be pulling together all of the Javascript techniques you've lear
 
 These will be applied in an inventory system for a long term parking garage. This will be done in many steps so let's break it down into digestible chunks.
 
+## Calling Functions in Your Code
+
+The Chrome interactive console a great tool but does not reflect the reality of testing your code or calling functions from within your code. Ultimately you will have lots of code "talking" to other code, and this must happen in the program itself.
+
+Call your functions in your JS file with the test cases you used, like:
+
+```
+console.log( parkCar() ); // empty!
+console.log( parkCar('chevy') );
+console.log( parkCar('dodge') );
+console.log( parkCar('tesla') );
+console.log( isParkedHere('ford') ); // expect false
+// etc
+```
+
 ## Required Features
 
 ### Global variables and pushing to an array
