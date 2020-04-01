@@ -29,7 +29,7 @@ console.log( isParkedHere('ford') ); // expect false
 ### Global variables and pushing to an array
 
 - create a variable named "parkedCars" and set it to an empty array
-- create a `const` named "maxCars" and set it to 7
+- create a `const` named "maxCars" and set it to 5
 
 ### the `parkCar` function
 
