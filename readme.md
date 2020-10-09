@@ -40,7 +40,7 @@ In this section we will write some functions that might be used in a simple cart
 ### Required Features
 Update the `2-cart.js` file to do the following:
 
-- Create a global variable named "basket" and set it to an empty array.
+- Create a global variable named `basket` and set it to an empty array.
 
 - Create a function called `addItem`. It should:
   - take an input parameter for a string `item`
@@ -49,9 +49,10 @@ Update the `2-cart.js` file to do the following:
 
 - Create a function called `listItems`. It should:
   - loop over the items in the `basket` array
-  - for each item console.log the individual item on a new line
+  - console.log each individual item on a new line
 
-- Create a function called `empty` to reset the `basket` to an empty array.
+- Create a function called `empty`. It should:
+  - reset the `basket` to an empty array
 
 > __IMPORTANT__
 > Make sure that you are writing code *in the file* to test every function that you write!
@@ -70,18 +71,18 @@ __Using functions in other functions!__
 
 1. Add a global `const` named `maxItems` and set it to 5.
 
-1. Create a function called isFull(). It should:
+2. Create a function called isFull(). It should:
   - return `false` if the basket contains *less* than max number of items
   - return `true` otherwise (equal or more than maxItems)
 
-1. Update the required `addItem` function to:
+3. Update the required `addItem` function to:
   - Use the `isFull` function to prevent more than `maxItems` from being added to the basket. 
   - If an item was added to the array, return `true`
   - If there was no room and the item could not be added return `false`
 
 __Using Array built-in functions!__
 
-1. Create a function called `removeItem`. It should:
+4. Create a function called `removeItem`. It should:
   - Take an input parameter for a string `item`
   - Use [Array.indexOf](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) to find the index of the first matching `item` in the `basket`.
   - Use [Array.splice](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) to remove the first matching `item` from the `basket`.
