@@ -12,7 +12,7 @@ function hello() {
 console.log('Test - should say "Hello World!"', hello());
 
 
-// 2. Function to say hello to someone by name
+// 2. Function to say hello by name, for example 'Hello, Jo!'
 function helloName( name ) {
   return;
 }
@@ -64,8 +64,7 @@ function find( value, array ){
 // 8. Function to check if a letter is the first letter in a 
 //    string. Return true if it is, and false otherwise
 function isFirstLetter(letter, string) {
-  // You can access characters in a string similar to an array
-  console.log( string[0] ); // Remove this line when finished
+
 }
 console.log( 'isFirstLetter - should say true', isFirstLetter('a', 'apple') );
 console.log( 'isFirstLetter - should say false', isFirstLetter('z', 'apple') );
@@ -77,8 +76,8 @@ function sumAll( ) {
   return sum;
 }
 
-// 10. Function to return an array of all positive (greater than zero)
-//    numbers from an input array
+// 10. Function to return a new array of all positive (greater than zero)
+//     numbers contained in an input array. The input array should not change.
 
 
 
