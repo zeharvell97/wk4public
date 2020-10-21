@@ -46,7 +46,8 @@ console.log( 'isPositive - should say false', isPositive(0) );
 console.log( 'isPositive - should say false', isPositive(-3) );
 
 
-// 6. Function to return the _last_ item in an array
+// 6. Function to return the _last_ item in an array. If the 
+//    array is empty, return `undefined`.
 function getLast( array ) {
 
 }
@@ -77,7 +78,8 @@ function sumAll( ) {
 }
 
 // 10. Function to return a new array of all positive (greater than zero)
-//     numbers contained in an input array. The input array should not change.
+//     numbers contained in an input array. If there are no positive numbers
+//     return an empty array. Note: The input array should not change.
 
 
 
