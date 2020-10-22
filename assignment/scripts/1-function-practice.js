@@ -12,7 +12,7 @@ function hello() {
 console.log('Test - should say "Hello World!"', hello());
 
 
-// 2. Function to say hello by name, for example 'Hello, Jo!'
+// 2. Function to return an personalized hello, for example 'Hello, Jo!'
 function helloName( name ) {
   return;
 }
